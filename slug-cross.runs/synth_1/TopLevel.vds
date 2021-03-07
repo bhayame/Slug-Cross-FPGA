@@ -1,0 +1,1781 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Dec 01 20:59:57 2018
+# Process ID: 6836
+# Current directory: C:/Users/bhayame/Desktop/Lab 7/Lab 7.runs/synth_1
+# Command line: vivado.exe -log TopLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel.tcl
+# Log file: C:/Users/bhayame/Desktop/Lab 7/Lab 7.runs/synth_1/TopLevel.vds
+# Journal file: C:/Users/bhayame/Desktop/Lab 7/Lab 7.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopLevel.tcl -notrace
+Command: synth_design -top TopLevel -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5280 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 314.797 ; gain = 102.094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:23]
+INFO: [Synth 8-638] synthesizing module 'TopStateMachine' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachine.v:23]
+INFO: [Synth 8-638] synthesizing module 'TopStateMachineLogic' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachineLogic.v:23]
+INFO: [Synth 8-256] done synthesizing module 'TopStateMachineLogic' (1#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachineLogic.v:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (2#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-350] instance 'Q0_FF' of module 'FDRE' requires 5 connections, but only 4 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachine.v:45]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized0' (2#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-350] instance 'Q1_FF' of module 'FDRE' requires 5 connections, but only 4 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachine.v:46]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized1' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized1' (2#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-350] instance 'Q2_FF' of module 'FDRE' requires 5 connections, but only 4 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachine.v:47]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized2' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized2' (2#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-350] instance 'Q3_FF' of module 'FDRE' requires 5 connections, but only 4 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachine.v:48]
+INFO: [Synth 8-256] done synthesizing module 'TopStateMachine' (3#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachine.v:23]
+WARNING: [Synth 8-350] instance 'TopStateMachine' of module 'TopStateMachine' requires 12 connections, but only 11 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:49]
+INFO: [Synth 8-638] synthesizing module 'LossDetector' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/LossDetector.v:23]
+INFO: [Synth 8-256] done synthesizing module 'LossDetector' (4#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/LossDetector.v:23]
+INFO: [Synth 8-638] synthesizing module 'WinDetector' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/WinDetector.v:23]
+INFO: [Synth 8-256] done synthesizing module 'WinDetector' (5#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/WinDetector.v:23]
+INFO: [Synth 8-638] synthesizing module 'lab7_clks' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:24]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:57]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:14146]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (6#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:14146]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20414]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 9.125000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 36.500000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (7#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (8#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (9#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:57]
+INFO: [Synth 8-638] synthesizing module 'clkcntrl4' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:190]
+INFO: [Synth 8-638] synthesizing module 'CB4CE_MXILINX_clkcntrl4' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:306]
+INFO: [Synth 8-638] synthesizing module 'FTCE_MXILINX_clkcntrl4' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:276]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'XOR2' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:45290]
+INFO: [Synth 8-256] done synthesizing module 'XOR2' (10#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:45290]
+INFO: [Synth 8-638] synthesizing module 'FDCE' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3748]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_CLR_INVERTED bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDCE' (11#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3748]
+INFO: [Synth 8-256] done synthesizing module 'FTCE_MXILINX_clkcntrl4' (12#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:276]
+INFO: [Synth 8-638] synthesizing module 'AND4' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:108]
+INFO: [Synth 8-256] done synthesizing module 'AND4' (13#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:108]
+INFO: [Synth 8-638] synthesizing module 'AND3' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:60]
+INFO: [Synth 8-256] done synthesizing module 'AND3' (14#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:60]
+INFO: [Synth 8-638] synthesizing module 'AND2' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:14]
+INFO: [Synth 8-256] done synthesizing module 'AND2' (15#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:14]
+INFO: [Synth 8-638] synthesizing module 'VCC' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:44693]
+INFO: [Synth 8-256] done synthesizing module 'VCC' (16#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:44693]
+INFO: [Synth 8-256] done synthesizing module 'CB4CE_MXILINX_clkcntrl4' (17#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:306]
+INFO: [Synth 8-638] synthesizing module 'BUF' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:567]
+INFO: [Synth 8-256] done synthesizing module 'BUF' (18#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:567]
+WARNING: [Synth 8-3848] Net qsec in module/entity clkcntrl4 does not have driver. [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:194]
+INFO: [Synth 8-256] done synthesizing module 'clkcntrl4' (19#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:190]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:40]
+INFO: [Synth 8-638] synthesizing module 'STARTUPE2' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43498]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: float 
+INFO: [Synth 8-256] done synthesizing module 'STARTUPE2' (20#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43498]
+INFO: [Synth 8-256] done synthesizing module 'lab7_clks' (21#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Downloads/lab7_clks.v:24]
+WARNING: [Synth 8-350] instance 'not_so_slow' of module 'lab7_clks' requires 5 connections, but only 4 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:55]
+INFO: [Synth 8-638] synthesizing module 'VGAController' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VGAController.v:23]
+INFO: [Synth 8-638] synthesizing module 'HorizontalCounter' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizontalCounter.v:23]
+INFO: [Synth 8-638] synthesizing module 'countU10' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/countU10.v:23]
+INFO: [Synth 8-638] synthesizing module 'countU5' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/countU5.v:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized3' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized3' (21#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized4' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized4' (21#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized5' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized5' (21#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized6' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized6' (21#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized7' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized7' (21#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'countU5' (22#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/countU5.v:23]
+INFO: [Synth 8-256] done synthesizing module 'countU10' (23#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/countU10.v:23]
+INFO: [Synth 8-256] done synthesizing module 'HorizontalCounter' (24#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizontalCounter.v:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized8' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized8' (24#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized9' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized9' (24#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'VerticalCounter' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VerticalCounter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VerticalCounter' (25#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VerticalCounter.v:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized10' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized10' (25#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized11' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized11' (25#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'EdgeDetector' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/new/EdgeDetector.v:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized12' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized12' (25#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'EdgeDetector' (26#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/new/EdgeDetector.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VGAController' (27#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VGAController.v:23]
+INFO: [Synth 8-638] synthesizing module 'BorderGenerator' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BorderGenerator.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (10) of module 'countU10' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BorderGenerator.v:36]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BorderGenerator.v:36]
+INFO: [Synth 8-638] synthesizing module 'FlashModule' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/FlashModule.v:23]
+INFO: [Synth 8-256] done synthesizing module 'FlashModule' (28#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/FlashModule.v:23]
+WARNING: [Synth 8-3848] Net SecOut in module/entity BorderGenerator does not have driver. [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BorderGenerator.v:33]
+INFO: [Synth 8-256] done synthesizing module 'BorderGenerator' (29#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BorderGenerator.v:23]
+WARNING: [Synth 8-350] instance 'BorderGenerator' of module 'BorderGenerator' requires 6 connections, but only 5 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:60]
+INFO: [Synth 8-638] synthesizing module 'SlugGenerator' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugGenerator.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (10) of module 'countU10' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugGenerator.v:43]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugGenerator.v:43]
+INFO: [Synth 8-638] synthesizing module 'SlugPositionSet' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugPositionSet.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SlugPositionSet' (30#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugPositionSet.v:23]
+INFO: [Synth 8-638] synthesizing module 'btnChecker' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/btnChecker.v:23]
+INFO: [Synth 8-256] done synthesizing module 'btnChecker' (31#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/btnChecker.v:23]
+INFO: [Synth 8-638] synthesizing module 'BGCollisionDetector' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BGCollisionDetector.v:23]
+WARNING: [Synth 8-3848] Net DwStop in module/entity BGCollisionDetector does not have driver. [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BGCollisionDetector.v:29]
+WARNING: [Synth 8-3848] Net LeftStop in module/entity BGCollisionDetector does not have driver. [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BGCollisionDetector.v:30]
+WARNING: [Synth 8-3848] Net RightStop in module/entity BGCollisionDetector does not have driver. [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BGCollisionDetector.v:31]
+INFO: [Synth 8-256] done synthesizing module 'BGCollisionDetector' (32#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BGCollisionDetector.v:23]
+INFO: [Synth 8-638] synthesizing module 'SlugVerticalComponent' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:23]
+INFO: [Synth 8-638] synthesizing module 'countUD10L' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/countUD10L.v:23]
+INFO: [Synth 8-638] synthesizing module 'countUD5L' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/new/countUD5L.v:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized13' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized13' (32#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized14' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized14' (32#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized15' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized15' (32#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized16' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized16' (32#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized17' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized17' (32#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'mux2to1' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/new/mux2to1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux2to1' (33#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/new/mux2to1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'countUD5L' (34#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/new/countUD5L.v:23]
+WARNING: [Synth 8-350] instance 'counter2' of module 'countUD5L' requires 9 connections, but only 7 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/countUD10L.v:36]
+INFO: [Synth 8-256] done synthesizing module 'countUD10L' (35#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/countUD10L.v:23]
+WARNING: [Synth 8-350] instance 'counter0' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:35]
+WARNING: [Synth 8-350] instance 'counter1' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:36]
+WARNING: [Synth 8-350] instance 'counter2' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:37]
+WARNING: [Synth 8-350] instance 'counter3' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:38]
+WARNING: [Synth 8-350] instance 'counter4' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:39]
+WARNING: [Synth 8-350] instance 'counter5' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:40]
+WARNING: [Synth 8-350] instance 'counter6' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:41]
+WARNING: [Synth 8-350] instance 'counter7' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:42]
+WARNING: [Synth 8-350] instance 'counter8' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:43]
+WARNING: [Synth 8-350] instance 'counter9' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:44]
+WARNING: [Synth 8-350] instance 'counterA' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:45]
+WARNING: [Synth 8-350] instance 'counterB' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:46]
+WARNING: [Synth 8-350] instance 'counterC' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:47]
+WARNING: [Synth 8-350] instance 'counterD' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:48]
+WARNING: [Synth 8-350] instance 'counterE' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:49]
+WARNING: [Synth 8-350] instance 'counterF' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:50]
+INFO: [Synth 8-256] done synthesizing module 'SlugVerticalComponent' (36#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:23]
+INFO: [Synth 8-638] synthesizing module 'SlugHorizontalComponent' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:23]
+WARNING: [Synth 8-350] instance 'counter0' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:35]
+WARNING: [Synth 8-350] instance 'counter1' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:36]
+WARNING: [Synth 8-350] instance 'counter2' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:37]
+WARNING: [Synth 8-350] instance 'counter3' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:38]
+WARNING: [Synth 8-350] instance 'counter4' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:39]
+WARNING: [Synth 8-350] instance 'counter5' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:40]
+WARNING: [Synth 8-350] instance 'counter6' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:41]
+WARNING: [Synth 8-350] instance 'counter7' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:42]
+WARNING: [Synth 8-350] instance 'counter8' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:43]
+WARNING: [Synth 8-350] instance 'counter9' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:44]
+WARNING: [Synth 8-350] instance 'counterA' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:45]
+WARNING: [Synth 8-350] instance 'counterB' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:46]
+WARNING: [Synth 8-350] instance 'counterC' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:47]
+WARNING: [Synth 8-350] instance 'counterD' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:48]
+WARNING: [Synth 8-350] instance 'counterE' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:49]
+WARNING: [Synth 8-350] instance 'counterF' of module 'countUD10L' requires 7 connections, but only 6 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:50]
+INFO: [Synth 8-256] done synthesizing module 'SlugHorizontalComponent' (37#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:23]
+WARNING: [Synth 8-3848] Net SecOut in module/entity SlugGenerator does not have driver. [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugGenerator.v:40]
+INFO: [Synth 8-256] done synthesizing module 'SlugGenerator' (38#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugGenerator.v:23]
+INFO: [Synth 8-638] synthesizing module 'VerticalObstacles' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VerticalObstacles.v:23]
+INFO: [Synth 8-638] synthesizing module 'V1' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'V1' (39#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V1.v:23]
+INFO: [Synth 8-638] synthesizing module 'V2' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'V2' (40#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V2.v:23]
+INFO: [Synth 8-638] synthesizing module 'V3' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V3.v:23]
+INFO: [Synth 8-256] done synthesizing module 'V3' (41#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V3.v:23]
+INFO: [Synth 8-638] synthesizing module 'V4' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'V4' (42#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V4.v:23]
+INFO: [Synth 8-638] synthesizing module 'V5' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V5.v:23]
+INFO: [Synth 8-256] done synthesizing module 'V5' (43#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V5.v:23]
+INFO: [Synth 8-638] synthesizing module 'V6' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V6.v:23]
+INFO: [Synth 8-256] done synthesizing module 'V6' (44#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V6.v:23]
+INFO: [Synth 8-638] synthesizing module 'V7' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V7.v:23]
+INFO: [Synth 8-256] done synthesizing module 'V7' (45#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/V7.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VerticalObstacles' (46#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VerticalObstacles.v:23]
+INFO: [Synth 8-638] synthesizing module 'VerticalGaps' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VerticalGaps.v:23]
+INFO: [Synth 8-638] synthesizing module 'VertGap1' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap1.v:23]
+INFO: [Synth 8-638] synthesizing module 'GapStateMachine' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachine.v:23]
+INFO: [Synth 8-638] synthesizing module 'GapStateMachineLogic' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachineLogic.v:23]
+INFO: [Synth 8-256] done synthesizing module 'GapStateMachineLogic' (47#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachineLogic.v:23]
+WARNING: [Synth 8-350] instance 'Q0_FF' of module 'FDRE' requires 5 connections, but only 4 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachine.v:42]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized18' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized18' (47#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-350] instance 'Q1_FF' of module 'FDRE' requires 5 connections, but only 4 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachine.v:43]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized19' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized19' (47#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-350] instance 'Q2_FF' of module 'FDRE' requires 5 connections, but only 4 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachine.v:44]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized20' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized20' (47#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-350] instance 'Q3_FF' of module 'FDRE' requires 5 connections, but only 4 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachine.v:45]
+INFO: [Synth 8-256] done synthesizing module 'GapStateMachine' (48#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachine.v:23]
+INFO: [Synth 8-638] synthesizing module 'GapWallDetect' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapWallDetect.v:23]
+INFO: [Synth 8-256] done synthesizing module 'GapWallDetect' (49#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapWallDetect.v:23]
+INFO: [Synth 8-638] synthesizing module 'SlugRedDetect' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugRedDetect.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SlugRedDetect' (50#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugRedDetect.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap1.v:53]
+INFO: [Synth 8-638] synthesizing module 'GapHorizontalComponent' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapHorizontalComponent.v:23]
+INFO: [Synth 8-256] done synthesizing module 'GapHorizontalComponent' (51#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapHorizontalComponent.v:23]
+INFO: [Synth 8-638] synthesizing module 'GapVerticalComponent' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapVerticalComponent.v:23]
+INFO: [Synth 8-638] synthesizing module 'GapSize' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapSize.v:23]
+INFO: [Synth 8-256] done synthesizing module 'GapSize' (52#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapSize.v:23]
+INFO: [Synth 8-256] done synthesizing module 'GapVerticalComponent' (53#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapVerticalComponent.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VertGap1' (54#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap1.v:23]
+INFO: [Synth 8-638] synthesizing module 'VertGap2' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap2.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap2.v:53]
+INFO: [Synth 8-256] done synthesizing module 'VertGap2' (55#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap2.v:23]
+INFO: [Synth 8-638] synthesizing module 'VertGap3' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap3.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap3.v:53]
+INFO: [Synth 8-256] done synthesizing module 'VertGap3' (56#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap3.v:23]
+INFO: [Synth 8-638] synthesizing module 'VertGap4' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap4.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap4.v:53]
+INFO: [Synth 8-256] done synthesizing module 'VertGap4' (57#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap4.v:23]
+INFO: [Synth 8-638] synthesizing module 'VertGap5' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap5.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap5.v:53]
+INFO: [Synth 8-256] done synthesizing module 'VertGap5' (58#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap5.v:23]
+INFO: [Synth 8-638] synthesizing module 'VertGap6' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap6.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap6.v:53]
+INFO: [Synth 8-256] done synthesizing module 'VertGap6' (59#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap6.v:23]
+INFO: [Synth 8-638] synthesizing module 'VertGap7' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap7.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap7.v:53]
+INFO: [Synth 8-256] done synthesizing module 'VertGap7' (60#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap7.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VerticalGaps' (61#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VerticalGaps.v:23]
+WARNING: [Synth 8-350] instance 'VerticalGaps' of module 'VerticalGaps' requires 12 connections, but only 11 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:66]
+INFO: [Synth 8-638] synthesizing module 'HorizontalObstacles' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizontalObstacles.v:23]
+INFO: [Synth 8-638] synthesizing module 'H1' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'H1' (62#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H1.v:23]
+INFO: [Synth 8-638] synthesizing module 'H2' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H2.v:23]
+INFO: [Synth 8-256] done synthesizing module 'H2' (63#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H2.v:23]
+INFO: [Synth 8-638] synthesizing module 'H3' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H3.v:23]
+INFO: [Synth 8-256] done synthesizing module 'H3' (64#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H3.v:23]
+INFO: [Synth 8-638] synthesizing module 'H4' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'H4' (65#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H4.v:23]
+INFO: [Synth 8-638] synthesizing module 'H5' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H5.v:23]
+INFO: [Synth 8-256] done synthesizing module 'H5' (66#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H5.v:23]
+INFO: [Synth 8-638] synthesizing module 'H6' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H6.v:23]
+INFO: [Synth 8-256] done synthesizing module 'H6' (67#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H6.v:23]
+INFO: [Synth 8-638] synthesizing module 'H7' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H7.v:23]
+INFO: [Synth 8-256] done synthesizing module 'H7' (68#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/H7.v:23]
+INFO: [Synth 8-256] done synthesizing module 'HorizontalObstacles' (69#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizontalObstacles.v:23]
+INFO: [Synth 8-638] synthesizing module 'HorizontalGaps' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizontalGaps.v:23]
+INFO: [Synth 8-638] synthesizing module 'HorizGap1' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap1.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap1.v:53]
+INFO: [Synth 8-256] done synthesizing module 'HorizGap1' (70#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap1.v:23]
+INFO: [Synth 8-638] synthesizing module 'HorizGap2' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap2.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap2.v:53]
+INFO: [Synth 8-256] done synthesizing module 'HorizGap2' (71#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap2.v:23]
+INFO: [Synth 8-638] synthesizing module 'HorizGap3' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap3.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap3.v:53]
+INFO: [Synth 8-256] done synthesizing module 'HorizGap3' (72#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap3.v:23]
+INFO: [Synth 8-638] synthesizing module 'HorizGap4' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap4.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap4.v:53]
+INFO: [Synth 8-256] done synthesizing module 'HorizGap4' (73#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap4.v:23]
+INFO: [Synth 8-638] synthesizing module 'HorizGap5' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap5.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap5.v:53]
+INFO: [Synth 8-256] done synthesizing module 'HorizGap5' (74#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap5.v:23]
+INFO: [Synth 8-638] synthesizing module 'HorizGap6' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap6.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap6.v:53]
+INFO: [Synth 8-256] done synthesizing module 'HorizGap6' (75#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap6.v:23]
+INFO: [Synth 8-638] synthesizing module 'HorizGap7' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap7.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap7.v:53]
+INFO: [Synth 8-256] done synthesizing module 'HorizGap7' (76#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap7.v:23]
+INFO: [Synth 8-256] done synthesizing module 'HorizontalGaps' (77#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizontalGaps.v:23]
+WARNING: [Synth 8-350] instance 'HorizontalGaps' of module 'HorizontalGaps' requires 12 connections, but only 11 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:70]
+INFO: [Synth 8-638] synthesizing module 'qsecTicker' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/qsecTicker.v:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized21' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized21' (77#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized22' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized22' (77#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized23' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized23' (77#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized24' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized24' (77#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized25' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized25' (77#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'qsecTicker' (78#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/qsecTicker.v:23]
+INFO: [Synth 8-638] synthesizing module 'Timer' [C:/Users/bhayame/Desktop/TIMER/TIMER.srcs/sources_1/new/Timer.v:20]
+INFO: [Synth 8-638] synthesizing module 'secondTicker' [C:/Users/bhayame/Desktop/TIMER/TIMER.srcs/sources_1/new/secondTicker.v:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized26' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized26' (78#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized27' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized27' (78#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized28' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized28' (78#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized29' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized29' (78#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized30' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized30' (78#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized31' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized31' (78#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'secondTicker' (79#1) [C:/Users/bhayame/Desktop/TIMER/TIMER.srcs/sources_1/new/secondTicker.v:23]
+INFO: [Synth 8-638] synthesizing module 'countU4' [C:/Users/bhayame/Desktop/TIMER/TIMER.srcs/sources_1/new/countU4.v:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized32' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized32' (79#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized33' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized33' (79#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized34' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized34' (79#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized35' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized35' (79#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'countU4' (80#1) [C:/Users/bhayame/Desktop/TIMER/TIMER.srcs/sources_1/new/countU4.v:23]
+INFO: [Synth 8-638] synthesizing module 'countU3' [C:/Users/bhayame/Desktop/TIMER/TIMER.srcs/sources_1/new/countU3.v:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized36' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized36' (80#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized37' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized37' (80#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized38' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized38' (80#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'countU3' (81#1) [C:/Users/bhayame/Desktop/TIMER/TIMER.srcs/sources_1/new/countU3.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Timer' (82#1) [C:/Users/bhayame/Desktop/TIMER/TIMER.srcs/sources_1/new/Timer.v:20]
+INFO: [Synth 8-638] synthesizing module 'RingCounter' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Desktop/Lab 4/Lab 4.srcs/sources_1/new/RingCounter.v:23]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized39' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized39' (82#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized40' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized40' (82#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-638] synthesizing module 'FDRE__parameterized41' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE__parameterized41' (82#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:3964]
+WARNING: [Synth 8-3848] Net reset in module/entity RingCounter does not have driver. [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Desktop/Lab 4/Lab 4.srcs/sources_1/new/RingCounter.v:29]
+INFO: [Synth 8-256] done synthesizing module 'RingCounter' (83#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Desktop/Lab 4/Lab 4.srcs/sources_1/new/RingCounter.v:23]
+INFO: [Synth 8-638] synthesizing module 'Selector' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Desktop/Lab 4/Lab 4.srcs/sources_1/new/Selector.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Selector' (84#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Desktop/Lab 4/Lab 4.srcs/sources_1/new/Selector.v:23]
+INFO: [Synth 8-638] synthesizing module 'hex7seg' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Desktop/Lab 4/Lab 4.srcs/sources_1/new/hex7seg.v:23]
+INFO: [Synth 8-638] synthesizing module 'm8_1e' [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/new/m8_1e.v:23]
+INFO: [Synth 8-256] done synthesizing module 'm8_1e' (85#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/new/m8_1e.v:23]
+INFO: [Synth 8-256] done synthesizing module 'hex7seg' (86#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Desktop/Lab 4/Lab 4.srcs/sources_1/new/hex7seg.v:23]
+WARNING: [Synth 8-350] instance 'secGenerator' of module 'countU10' requires 4 connections, but only 3 given [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:83]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (87#1) [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:23]
+WARNING: [Synth 8-3331] design HorizGap7 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap6 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap5 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap4 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap3 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap2 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap1 has unconnected port reset
+WARNING: [Synth 8-3331] design H7 has unconnected port Hcount[2]
+WARNING: [Synth 8-3331] design H7 has unconnected port Hcount[1]
+WARNING: [Synth 8-3331] design H7 has unconnected port Hcount[0]
+WARNING: [Synth 8-3331] design H6 has unconnected port Hcount[2]
+WARNING: [Synth 8-3331] design H6 has unconnected port Hcount[1]
+WARNING: [Synth 8-3331] design H6 has unconnected port Hcount[0]
+WARNING: [Synth 8-3331] design H5 has unconnected port Hcount[2]
+WARNING: [Synth 8-3331] design H5 has unconnected port Hcount[1]
+WARNING: [Synth 8-3331] design H5 has unconnected port Hcount[0]
+WARNING: [Synth 8-3331] design H4 has unconnected port Hcount[2]
+WARNING: [Synth 8-3331] design H4 has unconnected port Hcount[1]
+WARNING: [Synth 8-3331] design H4 has unconnected port Hcount[0]
+WARNING: [Synth 8-3331] design H3 has unconnected port Hcount[2]
+WARNING: [Synth 8-3331] design H3 has unconnected port Hcount[1]
+WARNING: [Synth 8-3331] design H3 has unconnected port Hcount[0]
+WARNING: [Synth 8-3331] design H2 has unconnected port Hcount[2]
+WARNING: [Synth 8-3331] design H2 has unconnected port Hcount[1]
+WARNING: [Synth 8-3331] design H2 has unconnected port Hcount[0]
+WARNING: [Synth 8-3331] design H1 has unconnected port Hcount[2]
+WARNING: [Synth 8-3331] design H1 has unconnected port Hcount[1]
+WARNING: [Synth 8-3331] design H1 has unconnected port Hcount[0]
+WARNING: [Synth 8-3331] design VertGap7 has unconnected port reset
+WARNING: [Synth 8-3331] design VertGap6 has unconnected port reset
+WARNING: [Synth 8-3331] design VertGap5 has unconnected port reset
+WARNING: [Synth 8-3331] design VertGap4 has unconnected port reset
+WARNING: [Synth 8-3331] design VertGap3 has unconnected port reset
+WARNING: [Synth 8-3331] design VertGap2 has unconnected port reset
+WARNING: [Synth 8-3331] design VertGap1 has unconnected port reset
+WARNING: [Synth 8-3331] design V7 has unconnected port Vcount[2]
+WARNING: [Synth 8-3331] design V7 has unconnected port Vcount[1]
+WARNING: [Synth 8-3331] design V7 has unconnected port Vcount[0]
+WARNING: [Synth 8-3331] design V6 has unconnected port Vcount[2]
+WARNING: [Synth 8-3331] design V6 has unconnected port Vcount[1]
+WARNING: [Synth 8-3331] design V6 has unconnected port Vcount[0]
+WARNING: [Synth 8-3331] design V5 has unconnected port Vcount[2]
+WARNING: [Synth 8-3331] design V5 has unconnected port Vcount[1]
+WARNING: [Synth 8-3331] design V5 has unconnected port Vcount[0]
+WARNING: [Synth 8-3331] design V4 has unconnected port Vcount[2]
+WARNING: [Synth 8-3331] design V4 has unconnected port Vcount[1]
+WARNING: [Synth 8-3331] design V4 has unconnected port Vcount[0]
+WARNING: [Synth 8-3331] design V3 has unconnected port Vcount[2]
+WARNING: [Synth 8-3331] design V3 has unconnected port Vcount[1]
+WARNING: [Synth 8-3331] design V3 has unconnected port Vcount[0]
+WARNING: [Synth 8-3331] design V2 has unconnected port Vcount[2]
+WARNING: [Synth 8-3331] design V2 has unconnected port Vcount[1]
+WARNING: [Synth 8-3331] design V2 has unconnected port Vcount[0]
+WARNING: [Synth 8-3331] design V1 has unconnected port Vcount[2]
+WARNING: [Synth 8-3331] design V1 has unconnected port Vcount[1]
+WARNING: [Synth 8-3331] design V1 has unconnected port Vcount[0]
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port DwStop
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port LeftStop
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port RightStop
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port Hcount[9]
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port Hcount[8]
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port Hcount[7]
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port Hcount[6]
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port Hcount[5]
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port Hcount[4]
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port Hcount[3]
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port Hcount[2]
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port Hcount[1]
+WARNING: [Synth 8-3331] design BGCollisionDetector has unconnected port Hcount[0]
+WARNING: [Synth 8-3331] design SlugPositionSet has unconnected port Hcount[0]
+WARNING: [Synth 8-3331] design BorderGenerator has unconnected port Hcount[2]
+WARNING: [Synth 8-3331] design BorderGenerator has unconnected port Hcount[1]
+WARNING: [Synth 8-3331] design BorderGenerator has unconnected port Hcount[0]
+WARNING: [Synth 8-3331] design BorderGenerator has unconnected port Vcount[2]
+WARNING: [Synth 8-3331] design BorderGenerator has unconnected port Vcount[1]
+WARNING: [Synth 8-3331] design BorderGenerator has unconnected port Vcount[0]
+WARNING: [Synth 8-3331] design clkcntrl4 has unconnected port qsec
+WARNING: [Synth 8-3331] design TopStateMachineLogic has unconnected port clk
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[15]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[14]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[13]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[12]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[11]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[10]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[9]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[8]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[7]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[3]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[2]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port sw[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 361.043 ; gain = 148.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Q0_FF:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachine.v:45]
+WARNING: [Synth 8-3295] tying undriven pin Q1_FF:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachine.v:46]
+WARNING: [Synth 8-3295] tying undriven pin Q2_FF:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachine.v:47]
+WARNING: [Synth 8-3295] tying undriven pin Q3_FF:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopStateMachine.v:48]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BorderGenerator.v:36]
+WARNING: [Synth 8-3295] tying undriven pin FlashModule:sec to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/BorderGenerator.v:37]
+WARNING: [Synth 8-3295] tying undriven pin counter0:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:35]
+WARNING: [Synth 8-3295] tying undriven pin counter1:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:36]
+WARNING: [Synth 8-3295] tying undriven pin counter2:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:37]
+WARNING: [Synth 8-3295] tying undriven pin counter3:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:38]
+WARNING: [Synth 8-3295] tying undriven pin counter4:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:39]
+WARNING: [Synth 8-3295] tying undriven pin counter5:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:40]
+WARNING: [Synth 8-3295] tying undriven pin counter6:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:41]
+WARNING: [Synth 8-3295] tying undriven pin counter7:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:42]
+WARNING: [Synth 8-3295] tying undriven pin counter8:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:43]
+WARNING: [Synth 8-3295] tying undriven pin counter9:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:44]
+WARNING: [Synth 8-3295] tying undriven pin counterA:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:45]
+WARNING: [Synth 8-3295] tying undriven pin counterB:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:46]
+WARNING: [Synth 8-3295] tying undriven pin counterC:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:47]
+WARNING: [Synth 8-3295] tying undriven pin counterD:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:48]
+WARNING: [Synth 8-3295] tying undriven pin counterE:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:49]
+WARNING: [Synth 8-3295] tying undriven pin counterF:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugVerticalComponent.v:50]
+WARNING: [Synth 8-3295] tying undriven pin counter0:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:35]
+WARNING: [Synth 8-3295] tying undriven pin counter1:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:36]
+WARNING: [Synth 8-3295] tying undriven pin counter2:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:37]
+WARNING: [Synth 8-3295] tying undriven pin counter3:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:38]
+WARNING: [Synth 8-3295] tying undriven pin counter4:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:39]
+WARNING: [Synth 8-3295] tying undriven pin counter5:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:40]
+WARNING: [Synth 8-3295] tying undriven pin counter6:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:41]
+WARNING: [Synth 8-3295] tying undriven pin counter7:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:42]
+WARNING: [Synth 8-3295] tying undriven pin counter8:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:43]
+WARNING: [Synth 8-3295] tying undriven pin counter9:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:44]
+WARNING: [Synth 8-3295] tying undriven pin counterA:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:45]
+WARNING: [Synth 8-3295] tying undriven pin counterB:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:46]
+WARNING: [Synth 8-3295] tying undriven pin counterC:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:47]
+WARNING: [Synth 8-3295] tying undriven pin counterD:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:48]
+WARNING: [Synth 8-3295] tying undriven pin counterE:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:49]
+WARNING: [Synth 8-3295] tying undriven pin counterF:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugHorizontalComponent.v:50]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugGenerator.v:43]
+WARNING: [Synth 8-3295] tying undriven pin FlashModule:sec to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/SlugGenerator.v:44]
+WARNING: [Synth 8-3295] tying undriven pin Q0_FF:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachine.v:42]
+WARNING: [Synth 8-3295] tying undriven pin Q1_FF:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachine.v:43]
+WARNING: [Synth 8-3295] tying undriven pin Q2_FF:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachine.v:44]
+WARNING: [Synth 8-3295] tying undriven pin Q3_FF:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/GapStateMachine.v:45]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap1.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap2.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap3.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap4.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap5.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap6.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/VertGap7.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap1.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap2.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap3.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap4.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap5.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap6.v:53]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/HorizGap7.v:53]
+WARNING: [Synth 8-3295] tying undriven pin ff0:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Desktop/Lab 4/Lab 4.srcs/sources_1/new/RingCounter.v:29]
+WARNING: [Synth 8-3295] tying undriven pin ff1:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Desktop/Lab 4/Lab 4.srcs/sources_1/new/RingCounter.v:30]
+WARNING: [Synth 8-3295] tying undriven pin ff2:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Desktop/Lab 4/Lab 4.srcs/sources_1/new/RingCounter.v:31]
+WARNING: [Synth 8-3295] tying undriven pin ff3:R to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/imports/Desktop/Lab 4/Lab 4.srcs/sources_1/new/RingCounter.v:32]
+WARNING: [Synth 8-3295] tying undriven pin BorderGenerator:clk to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:60]
+WARNING: [Synth 8-3295] tying undriven pin VerticalGaps:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:66]
+WARNING: [Synth 8-3295] tying undriven pin HorizontalGaps:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:70]
+WARNING: [Synth 8-3295] tying undriven pin secGenerator:reset to constant 0 [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/sources_1/new/TopLevel.v:83]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 361.043 ; gain = 148.340
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/bhayame/Desktop/Lab 7/Lab 7.srcs/constrs_1/imports/Desktop/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopLevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopLevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 49 instances were transformed.
+  AND2 => LUT2: 12 instances
+  AND3 => LUT3: 6 instances
+  AND4 => LUT4: 6 instances
+  BUF => LUT1: 1 instances
+  XOR2 => LUT2: 24 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 679.578 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 679.578 ; gain = 466.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 679.578 ; gain = 466.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 679.578 ; gain = 466.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 679.578 ; gain = 466.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 112   
++---XORs : 
+	   2 Input     10 Bit         XORs := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SlugVerticalComponent 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     10 Bit         XORs := 16    
+Module SlugHorizontalComponent 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     10 Bit         XORs := 16    
+Module GapVerticalComponent 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design HorizGap7 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap6 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap5 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap4 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap3 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap2 has unconnected port reset
+WARNING: [Synth 8-3331] design HorizGap1 has unconnected port reset
+WARNING: [Synth 8-3331] design VertGap7 has unconnected port reset
+WARNING: [Synth 8-3331] design VertGap6 has unconnected port reset
+WARNING: [Synth 8-3331] design VertGap5 has unconnected port reset
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q0/I_36_35) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q1/I_36_35) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q2/I_36_35) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_37/I_Q3/I_36_35) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q0/I_36_35) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q1/I_36_35) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q2/I_36_35) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (not_so_slow/slowclk/XLXI_44/I_Q3/I_36_35) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (BorderGenerator/SecEdge/ff) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (BorderGenerator/secGenerator/counter1/ff0) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (BorderGenerator/secGenerator/counter1/ff1) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (BorderGenerator/secGenerator/counter1/ff2) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (BorderGenerator/secGenerator/counter1/ff3) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (BorderGenerator/secGenerator/counter1/ff4) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (BorderGenerator/secGenerator/counter2/ff0) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (BorderGenerator/secGenerator/counter2/ff1) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (BorderGenerator/secGenerator/counter2/ff2) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (BorderGenerator/secGenerator/counter2/ff3) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (BorderGenerator/secGenerator/counter2/ff4) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (SlugGenerator/SecEdge/ff) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (SlugGenerator/secGenerator/counter1/ff0) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (SlugGenerator/secGenerator/counter1/ff1) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (SlugGenerator/secGenerator/counter1/ff2) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (SlugGenerator/secGenerator/counter1/ff3) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (SlugGenerator/secGenerator/counter1/ff4) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (SlugGenerator/secGenerator/counter2/ff0) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (SlugGenerator/secGenerator/counter2/ff1) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (SlugGenerator/secGenerator/counter2/ff2) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (SlugGenerator/secGenerator/counter2/ff3) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (SlugGenerator/secGenerator/counter2/ff4) is unused and will be removed from module TopLevel.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff1) is unused and will be removed from module VertGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff2) is unused and will be removed from module VertGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff3) is unused and will be removed from module VertGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff4) is unused and will be removed from module VertGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff0) is unused and will be removed from module VertGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff1) is unused and will be removed from module VertGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff2) is unused and will be removed from module VertGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff3) is unused and will be removed from module VertGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff4) is unused and will be removed from module VertGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff1) is unused and will be removed from module VertGap2.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff2) is unused and will be removed from module VertGap2.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff3) is unused and will be removed from module VertGap2.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff4) is unused and will be removed from module VertGap2.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff0) is unused and will be removed from module VertGap2.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff1) is unused and will be removed from module VertGap2.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff2) is unused and will be removed from module VertGap2.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff3) is unused and will be removed from module VertGap2.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff4) is unused and will be removed from module VertGap2.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff1) is unused and will be removed from module VertGap3.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff2) is unused and will be removed from module VertGap3.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff3) is unused and will be removed from module VertGap3.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff4) is unused and will be removed from module VertGap3.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff0) is unused and will be removed from module VertGap3.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff1) is unused and will be removed from module VertGap3.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff2) is unused and will be removed from module VertGap3.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff3) is unused and will be removed from module VertGap3.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff4) is unused and will be removed from module VertGap3.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff1) is unused and will be removed from module VertGap4.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff2) is unused and will be removed from module VertGap4.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff3) is unused and will be removed from module VertGap4.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff4) is unused and will be removed from module VertGap4.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff0) is unused and will be removed from module VertGap4.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff1) is unused and will be removed from module VertGap4.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff2) is unused and will be removed from module VertGap4.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff3) is unused and will be removed from module VertGap4.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff4) is unused and will be removed from module VertGap4.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff1) is unused and will be removed from module VertGap5.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff2) is unused and will be removed from module VertGap5.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff3) is unused and will be removed from module VertGap5.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff4) is unused and will be removed from module VertGap5.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff0) is unused and will be removed from module VertGap5.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff1) is unused and will be removed from module VertGap5.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff2) is unused and will be removed from module VertGap5.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff3) is unused and will be removed from module VertGap5.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff4) is unused and will be removed from module VertGap5.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff1) is unused and will be removed from module VertGap6.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff2) is unused and will be removed from module VertGap6.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff3) is unused and will be removed from module VertGap6.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff4) is unused and will be removed from module VertGap6.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff0) is unused and will be removed from module VertGap6.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff1) is unused and will be removed from module VertGap6.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff2) is unused and will be removed from module VertGap6.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff3) is unused and will be removed from module VertGap6.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff4) is unused and will be removed from module VertGap6.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff1) is unused and will be removed from module VertGap7.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff2) is unused and will be removed from module VertGap7.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff3) is unused and will be removed from module VertGap7.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff4) is unused and will be removed from module VertGap7.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff0) is unused and will be removed from module VertGap7.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff1) is unused and will be removed from module VertGap7.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff2) is unused and will be removed from module VertGap7.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff3) is unused and will be removed from module VertGap7.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff4) is unused and will be removed from module VertGap7.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff1) is unused and will be removed from module HorizGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff2) is unused and will be removed from module HorizGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff3) is unused and will be removed from module HorizGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter1/ff4) is unused and will be removed from module HorizGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff0) is unused and will be removed from module HorizGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff1) is unused and will be removed from module HorizGap1.
+WARNING: [Synth 8-3332] Sequential element (secGenerator/counter2/ff2) is unused and will be removed from module HorizGap1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:10 . Memory (MB): peak = 679.578 ; gain = 466.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 720.105 ; gain = 507.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:01:57 . Memory (MB): peak = 882.305 ; gain = 669.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:56 ; elapsed = 00:02:02 . Memory (MB): peak = 905.441 ; gain = 692.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin TopStateMachine/Q0_FF:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin TopStateMachine/Q1_FF:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin TopStateMachine/Q2_FF:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin TopStateMachine/Q3_FF:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter0/counter1/ff0:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter0/counter1/ff1:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter0/counter1/ff2:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter0/counter1/ff3:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter0/counter1/ff4:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter0/counter2/ff0:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter0/counter2/ff1:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter0/counter2/ff2:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter0/counter2/ff3:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter0/counter2/ff4:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter1/counter1/ff0:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter1/counter1/ff1:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter1/counter1/ff2:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter1/counter1/ff3:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter1/counter1/ff4:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter1/counter2/ff0:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter1/counter2/ff1:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter1/counter2/ff2:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter1/counter2/ff3:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter1/counter2/ff4:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter2/counter1/ff0:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter2/counter1/ff1:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter2/counter1/ff2:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter2/counter1/ff3:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter2/counter1/ff4:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter2/counter2/ff0:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter2/counter2/ff1:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter2/counter2/ff2:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter2/counter2/ff3:R to constant 0
+WARNING: [Synth 8-3295] tying undriven pin SlugGenerator/SlugVerticalComponent/counter2/counter2/ff4:R to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:57 ; elapsed = 00:02:03 . Memory (MB): peak = 905.441 ; gain = 692.738
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:57 ; elapsed = 00:02:03 . Memory (MB): peak = 905.441 ; gain = 692.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:59 ; elapsed = 00:02:05 . Memory (MB): peak = 905.441 ; gain = 692.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:59 ; elapsed = 00:02:06 . Memory (MB): peak = 905.441 ; gain = 692.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:00 ; elapsed = 00:02:06 . Memory (MB): peak = 905.441 ; gain = 692.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:00 ; elapsed = 00:02:06 . Memory (MB): peak = 905.441 ; gain = 692.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |AND2       |     8|
+|2     |AND3       |     4|
+|3     |AND4       |     4|
+|4     |BUF        |     1|
+|5     |BUFG       |     3|
+|6     |CARRY4     |    56|
+|7     |LUT1       |    66|
+|8     |LUT2       |  1782|
+|9     |LUT3       |   191|
+|10    |LUT4       |   843|
+|11    |LUT5       |   837|
+|12    |LUT6       |  1734|
+|13    |MMCME2_ADV |     1|
+|14    |MUXF7      |    70|
+|15    |STARTUPE2  |     1|
+|16    |XOR2       |    16|
+|17    |FDCE       |    16|
+|18    |FDRE       |  1739|
+|19    |IBUF       |    10|
+|20    |OBUF       |    26|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------------------+--------------------------+------+
+|      |Instance                    |Module                    |Cells |
++------+----------------------------+--------------------------+------+
+|1     |top                         |                          |  7408|
+|2     |  HorizontalGaps            |HorizontalGaps            |  2130|
+|3     |    HorizGap1               |HorizGap1                 |   300|
+|4     |      EdgeDetector          |EdgeDetector_549          |     1|
+|5     |      GapStateMachine       |GapStateMachine_550       |    28|
+|6     |      GapVerticalComponent  |GapVerticalComponent_551  |   267|
+|7     |        counter0            |countUD10L_555            |    26|
+|8     |          counter1          |countUD5L_580             |    15|
+|9     |          counter2          |countUD5L_581             |    11|
+|10    |        counter1            |countUD10L_556            |    23|
+|11    |          counter1          |countUD5L_578             |    14|
+|12    |          counter2          |countUD5L_579             |     9|
+|13    |        counter2            |countUD10L_557            |    38|
+|14    |          counter1          |countUD5L_576             |    17|
+|15    |          counter2          |countUD5L_577             |    21|
+|16    |        counter3            |countUD10L_558            |    27|
+|17    |          counter1          |countUD5L_574             |    18|
+|18    |          counter2          |countUD5L_575             |     9|
+|19    |        counter4            |countUD10L_559            |    29|
+|20    |          counter1          |countUD5L_572             |    15|
+|21    |          counter2          |countUD5L_573             |    14|
+|22    |        counter5            |countUD10L_560            |    27|
+|23    |          counter1          |countUD5L_570             |    18|
+|24    |          counter2          |countUD5L_571             |     9|
+|25    |        counter6            |countUD10L_561            |    41|
+|26    |          counter1          |countUD5L_568             |    27|
+|27    |          counter2          |countUD5L_569             |    14|
+|28    |        counter7            |countUD10L_562            |    23|
+|29    |          counter1          |countUD5L_566             |    14|
+|30    |          counter2          |countUD5L_567             |     9|
+|31    |        counter8            |countUD10L_563            |    29|
+|32    |          counter1          |countUD5L_564             |    15|
+|33    |          counter2          |countUD5L_565             |    14|
+|34    |      SecEdge               |EdgeDetector_552          |     1|
+|35    |      secGenerator          |countU10_553              |     3|
+|36    |        counter1            |countU5_554               |     3|
+|37    |    HorizGap2               |HorizGap2                 |   312|
+|38    |      EdgeDetector          |EdgeDetector_516          |     1|
+|39    |      GapStateMachine       |GapStateMachine_517       |    37|
+|40    |      GapVerticalComponent  |GapVerticalComponent_518  |   271|
+|41    |        counter0            |countUD10L_522            |    36|
+|42    |          counter1          |countUD5L_547             |    20|
+|43    |          counter2          |countUD5L_548             |    16|
+|44    |        counter1            |countUD10L_523            |    42|
+|45    |          counter1          |countUD5L_545             |    17|
+|46    |          counter2          |countUD5L_546             |    25|
+|47    |        counter2            |countUD10L_524            |    24|
+|48    |          counter1          |countUD5L_543             |    13|
+|49    |          counter2          |countUD5L_544             |    11|
+|50    |        counter3            |countUD10L_525            |    32|
+|51    |          counter1          |countUD5L_541             |    15|
+|52    |          counter2          |countUD5L_542             |    17|
+|53    |        counter4            |countUD10L_526            |    22|
+|54    |          counter1          |countUD5L_539             |    13|
+|55    |          counter2          |countUD5L_540             |     9|
+|56    |        counter5            |countUD10L_527            |    26|
+|57    |          counter1          |countUD5L_537             |    17|
+|58    |          counter2          |countUD5L_538             |     9|
+|59    |        counter6            |countUD10L_528            |    22|
+|60    |          counter1          |countUD5L_535             |    13|
+|61    |          counter2          |countUD5L_536             |     9|
+|62    |        counter7            |countUD10L_529            |    22|
+|63    |          counter1          |countUD5L_533             |    13|
+|64    |          counter2          |countUD5L_534             |     9|
+|65    |        counter8            |countUD10L_530            |    40|
+|66    |          counter1          |countUD5L_531             |    30|
+|67    |          counter2          |countUD5L_532             |    10|
+|68    |      SecEdge               |EdgeDetector_519          |     1|
+|69    |      secGenerator          |countU10_520              |     2|
+|70    |        counter1            |countU5_521               |     2|
+|71    |    HorizGap3               |HorizGap3                 |   300|
+|72    |      EdgeDetector          |EdgeDetector_483          |     1|
+|73    |      GapStateMachine       |GapStateMachine_484       |    28|
+|74    |      GapVerticalComponent  |GapVerticalComponent_485  |   267|
+|75    |        counter0            |countUD10L_489            |    26|
+|76    |          counter1          |countUD5L_514             |    15|
+|77    |          counter2          |countUD5L_515             |    11|
+|78    |        counter1            |countUD10L_490            |    23|
+|79    |          counter1          |countUD5L_512             |    14|
+|80    |          counter2          |countUD5L_513             |     9|
+|81    |        counter2            |countUD10L_491            |    38|
+|82    |          counter1          |countUD5L_510             |    17|
+|83    |          counter2          |countUD5L_511             |    21|
+|84    |        counter3            |countUD10L_492            |    27|
+|85    |          counter1          |countUD5L_508             |    18|
+|86    |          counter2          |countUD5L_509             |     9|
+|87    |        counter4            |countUD10L_493            |    29|
+|88    |          counter1          |countUD5L_506             |    15|
+|89    |          counter2          |countUD5L_507             |    14|
+|90    |        counter5            |countUD10L_494            |    27|
+|91    |          counter1          |countUD5L_504             |    18|
+|92    |          counter2          |countUD5L_505             |     9|
+|93    |        counter6            |countUD10L_495            |    41|
+|94    |          counter1          |countUD5L_502             |    27|
+|95    |          counter2          |countUD5L_503             |    14|
+|96    |        counter7            |countUD10L_496            |    23|
+|97    |          counter1          |countUD5L_500             |    14|
+|98    |          counter2          |countUD5L_501             |     9|
+|99    |        counter8            |countUD10L_497            |    29|
+|100   |          counter1          |countUD5L_498             |    15|
+|101   |          counter2          |countUD5L_499             |    14|
+|102   |      SecEdge               |EdgeDetector_486          |     1|
+|103   |      secGenerator          |countU10_487              |     3|
+|104   |        counter1            |countU5_488               |     3|
+|105   |    HorizGap4               |HorizGap4                 |   312|
+|106   |      EdgeDetector          |EdgeDetector_450          |     1|
+|107   |      GapStateMachine       |GapStateMachine_451       |    37|
+|108   |      GapVerticalComponent  |GapVerticalComponent_452  |   271|
+|109   |        counter0            |countUD10L_456            |    37|
+|110   |          counter1          |countUD5L_481             |    20|
+|111   |          counter2          |countUD5L_482             |    17|
+|112   |        counter1            |countUD10L_457            |    42|
+|113   |          counter1          |countUD5L_479             |    17|
+|114   |          counter2          |countUD5L_480             |    25|
+|115   |        counter2            |countUD10L_458            |    24|
+|116   |          counter1          |countUD5L_477             |    13|
+|117   |          counter2          |countUD5L_478             |    11|
+|118   |        counter3            |countUD10L_459            |    32|
+|119   |          counter1          |countUD5L_475             |    15|
+|120   |          counter2          |countUD5L_476             |    17|
+|121   |        counter4            |countUD10L_460            |    22|
+|122   |          counter1          |countUD5L_473             |    13|
+|123   |          counter2          |countUD5L_474             |     9|
+|124   |        counter5            |countUD10L_461            |    26|
+|125   |          counter1          |countUD5L_471             |    17|
+|126   |          counter2          |countUD5L_472             |     9|
+|127   |        counter6            |countUD10L_462            |    22|
+|128   |          counter1          |countUD5L_469             |    13|
+|129   |          counter2          |countUD5L_470             |     9|
+|130   |        counter7            |countUD10L_463            |    22|
+|131   |          counter1          |countUD5L_467             |    13|
+|132   |          counter2          |countUD5L_468             |     9|
+|133   |        counter8            |countUD10L_464            |    40|
+|134   |          counter1          |countUD5L_465             |    30|
+|135   |          counter2          |countUD5L_466             |    10|
+|136   |      SecEdge               |EdgeDetector_453          |     1|
+|137   |      secGenerator          |countU10_454              |     2|
+|138   |        counter1            |countU5_455               |     2|
+|139   |    HorizGap5               |HorizGap5                 |   300|
+|140   |      EdgeDetector          |EdgeDetector_417          |     1|
+|141   |      GapStateMachine       |GapStateMachine_418       |    28|
+|142   |      GapVerticalComponent  |GapVerticalComponent_419  |   267|
+|143   |        counter0            |countUD10L_423            |    26|
+|144   |          counter1          |countUD5L_448             |    15|
+|145   |          counter2          |countUD5L_449             |    11|
+|146   |        counter1            |countUD10L_424            |    23|
+|147   |          counter1          |countUD5L_446             |    14|
+|148   |          counter2          |countUD5L_447             |     9|
+|149   |        counter2            |countUD10L_425            |    38|
+|150   |          counter1          |countUD5L_444             |    17|
+|151   |          counter2          |countUD5L_445             |    21|
+|152   |        counter3            |countUD10L_426            |    27|
+|153   |          counter1          |countUD5L_442             |    18|
+|154   |          counter2          |countUD5L_443             |     9|
+|155   |        counter4            |countUD10L_427            |    29|
+|156   |          counter1          |countUD5L_440             |    15|
+|157   |          counter2          |countUD5L_441             |    14|
+|158   |        counter5            |countUD10L_428            |    27|
+|159   |          counter1          |countUD5L_438             |    18|
+|160   |          counter2          |countUD5L_439             |     9|
+|161   |        counter6            |countUD10L_429            |    41|
+|162   |          counter1          |countUD5L_436             |    27|
+|163   |          counter2          |countUD5L_437             |    14|
+|164   |        counter7            |countUD10L_430            |    23|
+|165   |          counter1          |countUD5L_434             |    14|
+|166   |          counter2          |countUD5L_435             |     9|
+|167   |        counter8            |countUD10L_431            |    29|
+|168   |          counter1          |countUD5L_432             |    15|
+|169   |          counter2          |countUD5L_433             |    14|
+|170   |      SecEdge               |EdgeDetector_420          |     1|
+|171   |      secGenerator          |countU10_421              |     3|
+|172   |        counter1            |countU5_422               |     3|
+|173   |    HorizGap6               |HorizGap6                 |   300|
+|174   |      EdgeDetector          |EdgeDetector_384          |     1|
+|175   |      GapStateMachine       |GapStateMachine_385       |    28|
+|176   |      GapVerticalComponent  |GapVerticalComponent_386  |   267|
+|177   |        counter0            |countUD10L_390            |    26|
+|178   |          counter1          |countUD5L_415             |    15|
+|179   |          counter2          |countUD5L_416             |    11|
+|180   |        counter1            |countUD10L_391            |    23|
+|181   |          counter1          |countUD5L_413             |    14|
+|182   |          counter2          |countUD5L_414             |     9|
+|183   |        counter2            |countUD10L_392            |    38|
+|184   |          counter1          |countUD5L_411             |    17|
+|185   |          counter2          |countUD5L_412             |    21|
+|186   |        counter3            |countUD10L_393            |    27|
+|187   |          counter1          |countUD5L_409             |    18|
+|188   |          counter2          |countUD5L_410             |     9|
+|189   |        counter4            |countUD10L_394            |    29|
+|190   |          counter1          |countUD5L_407             |    15|
+|191   |          counter2          |countUD5L_408             |    14|
+|192   |        counter5            |countUD10L_395            |    27|
+|193   |          counter1          |countUD5L_405             |    18|
+|194   |          counter2          |countUD5L_406             |     9|
+|195   |        counter6            |countUD10L_396            |    41|
+|196   |          counter1          |countUD5L_403             |    27|
+|197   |          counter2          |countUD5L_404             |    14|
+|198   |        counter7            |countUD10L_397            |    23|
+|199   |          counter1          |countUD5L_401             |    14|
+|200   |          counter2          |countUD5L_402             |     9|
+|201   |        counter8            |countUD10L_398            |    29|
+|202   |          counter1          |countUD5L_399             |    15|
+|203   |          counter2          |countUD5L_400             |    14|
+|204   |      SecEdge               |EdgeDetector_387          |     1|
+|205   |      secGenerator          |countU10_388              |     3|
+|206   |        counter1            |countU5_389               |     3|
+|207   |    HorizGap7               |HorizGap7                 |   304|
+|208   |      EdgeDetector          |EdgeDetector_351          |     1|
+|209   |      GapStateMachine       |GapStateMachine_352       |    32|
+|210   |      GapVerticalComponent  |GapVerticalComponent_353  |   267|
+|211   |        counter0            |countUD10L_357            |    26|
+|212   |          counter1          |countUD5L_382             |    15|
+|213   |          counter2          |countUD5L_383             |    11|
+|214   |        counter1            |countUD10L_358            |    23|
+|215   |          counter1          |countUD5L_380             |    14|
+|216   |          counter2          |countUD5L_381             |     9|
+|217   |        counter2            |countUD10L_359            |    38|
+|218   |          counter1          |countUD5L_378             |    17|
+|219   |          counter2          |countUD5L_379             |    21|
+|220   |        counter3            |countUD10L_360            |    27|
+|221   |          counter1          |countUD5L_376             |    18|
+|222   |          counter2          |countUD5L_377             |     9|
+|223   |        counter4            |countUD10L_361            |    29|
+|224   |          counter1          |countUD5L_374             |    15|
+|225   |          counter2          |countUD5L_375             |    14|
+|226   |        counter5            |countUD10L_362            |    27|
+|227   |          counter1          |countUD5L_372             |    18|
+|228   |          counter2          |countUD5L_373             |     9|
+|229   |        counter6            |countUD10L_363            |    41|
+|230   |          counter1          |countUD5L_370             |    27|
+|231   |          counter2          |countUD5L_371             |    14|
+|232   |        counter7            |countUD10L_364            |    23|
+|233   |          counter1          |countUD5L_368             |    14|
+|234   |          counter2          |countUD5L_369             |     9|
+|235   |        counter8            |countUD10L_365            |    29|
+|236   |          counter1          |countUD5L_366             |    15|
+|237   |          counter2          |countUD5L_367             |    14|
+|238   |      SecEdge               |EdgeDetector_354          |     1|
+|239   |      secGenerator          |countU10_355              |     3|
+|240   |        counter1            |countU5_356               |     3|
+|241   |  RingCounter               |RingCounter               |    22|
+|242   |  SecEdge                   |EdgeDetector              |     2|
+|243   |  SlugGenerator             |SlugGenerator             |   925|
+|244   |    SlugHorizontalComponent |SlugHorizontalComponent   |   470|
+|245   |      counter0              |countUD10L_303            |    30|
+|246   |        counter1            |countUD5L_349             |    18|
+|247   |        counter2            |countUD5L_350             |    12|
+|248   |      counter1              |countUD10L_304            |    29|
+|249   |        counter1            |countUD5L_347             |    19|
+|250   |        counter2            |countUD5L_348             |    10|
+|251   |      counter2              |countUD10L_305            |    28|
+|252   |        counter1            |countUD5L_345             |    15|
+|253   |        counter2            |countUD5L_346             |    13|
+|254   |      counter3              |countUD10L_306            |    30|
+|255   |        counter1            |countUD5L_343             |    18|
+|256   |        counter2            |countUD5L_344             |    12|
+|257   |      counter4              |countUD10L_307            |    29|
+|258   |        counter1            |countUD5L_341             |    19|
+|259   |        counter2            |countUD5L_342             |    10|
+|260   |      counter5              |countUD10L_308            |    32|
+|261   |        counter1            |countUD5L_339             |    20|
+|262   |        counter2            |countUD5L_340             |    12|
+|263   |      counter6              |countUD10L_309            |    28|
+|264   |        counter1            |countUD5L_337             |    16|
+|265   |        counter2            |countUD5L_338             |    12|
+|266   |      counter7              |countUD10L_310            |    30|
+|267   |        counter1            |countUD5L_335             |    17|
+|268   |        counter2            |countUD5L_336             |    13|
+|269   |      counter8              |countUD10L_311            |    30|
+|270   |        counter1            |countUD5L_333             |    19|
+|271   |        counter2            |countUD5L_334             |    11|
+|272   |      counter9              |countUD10L_312            |    28|
+|273   |        counter1            |countUD5L_331             |    18|
+|274   |        counter2            |countUD5L_332             |    10|
+|275   |      counterA              |countUD10L_313            |    30|
+|276   |        counter1            |countUD5L_329             |    18|
+|277   |        counter2            |countUD5L_330             |    12|
+|278   |      counterB              |countUD10L_314            |    31|
+|279   |        counter1            |countUD5L_327             |    19|
+|280   |        counter2            |countUD5L_328             |    12|
+|281   |      counterC              |countUD10L_315            |    28|
+|282   |        counter1            |countUD5L_325             |    18|
+|283   |        counter2            |countUD5L_326             |    10|
+|284   |      counterD              |countUD10L_316            |    29|
+|285   |        counter1            |countUD5L_323             |    19|
+|286   |        counter2            |countUD5L_324             |    10|
+|287   |      counterE              |countUD10L_317            |    29|
+|288   |        counter1            |countUD5L_321             |    17|
+|289   |        counter2            |countUD5L_322             |    12|
+|290   |      counterF              |countUD10L_318            |    29|
+|291   |        counter1            |countUD5L_319             |    19|
+|292   |        counter2            |countUD5L_320             |    10|
+|293   |    SlugVerticalComponent   |SlugVerticalComponent     |   455|
+|294   |      counter0              |countUD10L_255            |    28|
+|295   |        counter1            |countUD5L_301             |    17|
+|296   |        counter2            |countUD5L_302             |    11|
+|297   |      counter1              |countUD10L_256            |    29|
+|298   |        counter1            |countUD5L_299             |    18|
+|299   |        counter2            |countUD5L_300             |    11|
+|300   |      counter2              |countUD10L_257            |    28|
+|301   |        counter1            |countUD5L_297             |    17|
+|302   |        counter2            |countUD5L_298             |    11|
+|303   |      counter3              |countUD10L_258            |    29|
+|304   |        counter1            |countUD5L_295             |    18|
+|305   |        counter2            |countUD5L_296             |    11|
+|306   |      counter4              |countUD10L_259            |    28|
+|307   |        counter1            |countUD5L_293             |    17|
+|308   |        counter2            |countUD5L_294             |    11|
+|309   |      counter5              |countUD10L_260            |    29|
+|310   |        counter1            |countUD5L_291             |    18|
+|311   |        counter2            |countUD5L_292             |    11|
+|312   |      counter6              |countUD10L_261            |    27|
+|313   |        counter1            |countUD5L_289             |    16|
+|314   |        counter2            |countUD5L_290             |    11|
+|315   |      counter7              |countUD10L_262            |    28|
+|316   |        counter1            |countUD5L_287             |    17|
+|317   |        counter2            |countUD5L_288             |    11|
+|318   |      counter8              |countUD10L_263            |    27|
+|319   |        counter1            |countUD5L_285             |    16|
+|320   |        counter2            |countUD5L_286             |    11|
+|321   |      counter9              |countUD10L_264            |    28|
+|322   |        counter1            |countUD5L_283             |    17|
+|323   |        counter2            |countUD5L_284             |    11|
+|324   |      counterA              |countUD10L_265            |    26|
+|325   |        counter1            |countUD5L_281             |    17|
+|326   |        counter2            |countUD5L_282             |     9|
+|327   |      counterB              |countUD10L_266            |    29|
+|328   |        counter1            |countUD5L_279             |    18|
+|329   |        counter2            |countUD5L_280             |    11|
+|330   |      counterC              |countUD10L_267            |    29|
+|331   |        counter1            |countUD5L_277             |    18|
+|332   |        counter2            |countUD5L_278             |    11|
+|333   |      counterD              |countUD10L_268            |    32|
+|334   |        counter1            |countUD5L_275             |    22|
+|335   |        counter2            |countUD5L_276             |    10|
+|336   |      counterE              |countUD10L_269            |    28|
+|337   |        counter1            |countUD5L_273             |    17|
+|338   |        counter2            |countUD5L_274             |    11|
+|339   |      counterF              |countUD10L_270            |    30|
+|340   |        counter1            |countUD5L_271             |    19|
+|341   |        counter2            |countUD5L_272             |    11|
+|342   |  Timer                     |Timer                     |    65|
+|343   |    EdgeDetector            |EdgeDetector_252          |     2|
+|344   |    minutes                 |countU4                   |    13|
+|345   |    secondTicker            |secondTicker              |    18|
+|346   |    seconds                 |countU4_253               |    14|
+|347   |    tenMinutes              |countU3                   |     7|
+|348   |    tenSeconds              |countU3_254               |    11|
+|349   |  TopStateMachine           |TopStateMachine           |  1318|
+|350   |  VGAController             |VGAController             |   724|
+|351   |    EdgeDetector            |EdgeDetector_245          |    39|
+|352   |    HorizontalCounter       |HorizontalCounter         |   477|
+|353   |      counter               |countU10_249              |   477|
+|354   |        counter1            |countU5_250               |   371|
+|355   |        counter2            |countU5_251               |   106|
+|356   |    VerticalCounter         |VerticalCounter           |   202|
+|357   |      counter               |countU10_246              |   202|
+|358   |        counter1            |countU5_247               |    98|
+|359   |        counter2            |countU5_248               |   104|
+|360   |  VerticalGaps              |VerticalGaps              |  2104|
+|361   |    VertGap1                |VertGap1                  |   300|
+|362   |      EdgeDetector          |EdgeDetector_212          |     1|
+|363   |      GapStateMachine       |GapStateMachine_213       |    28|
+|364   |      GapVerticalComponent  |GapVerticalComponent_214  |   267|
+|365   |        counter0            |countUD10L_218            |    26|
+|366   |          counter1          |countUD5L_243             |    15|
+|367   |          counter2          |countUD5L_244             |    11|
+|368   |        counter1            |countUD10L_219            |    23|
+|369   |          counter1          |countUD5L_241             |    14|
+|370   |          counter2          |countUD5L_242             |     9|
+|371   |        counter2            |countUD10L_220            |    38|
+|372   |          counter1          |countUD5L_239             |    17|
+|373   |          counter2          |countUD5L_240             |    21|
+|374   |        counter3            |countUD10L_221            |    27|
+|375   |          counter1          |countUD5L_237             |    18|
+|376   |          counter2          |countUD5L_238             |     9|
+|377   |        counter4            |countUD10L_222            |    29|
+|378   |          counter1          |countUD5L_235             |    15|
+|379   |          counter2          |countUD5L_236             |    14|
+|380   |        counter5            |countUD10L_223            |    27|
+|381   |          counter1          |countUD5L_233             |    18|
+|382   |          counter2          |countUD5L_234             |     9|
+|383   |        counter6            |countUD10L_224            |    41|
+|384   |          counter1          |countUD5L_231             |    27|
+|385   |          counter2          |countUD5L_232             |    14|
+|386   |        counter7            |countUD10L_225            |    23|
+|387   |          counter1          |countUD5L_229             |    14|
+|388   |          counter2          |countUD5L_230             |     9|
+|389   |        counter8            |countUD10L_226            |    29|
+|390   |          counter1          |countUD5L_227             |    15|
+|391   |          counter2          |countUD5L_228             |    14|
+|392   |      SecEdge               |EdgeDetector_215          |     1|
+|393   |      secGenerator          |countU10_216              |     3|
+|394   |        counter1            |countU5_217               |     3|
+|395   |    VertGap2                |VertGap2                  |   299|
+|396   |      EdgeDetector          |EdgeDetector_179          |     1|
+|397   |      GapStateMachine       |GapStateMachine_180       |    28|
+|398   |      GapVerticalComponent  |GapVerticalComponent_181  |   267|
+|399   |        counter0            |countUD10L_185            |    26|
+|400   |          counter1          |countUD5L_210             |    15|
+|401   |          counter2          |countUD5L_211             |    11|
+|402   |        counter1            |countUD10L_186            |    23|
+|403   |          counter1          |countUD5L_208             |    14|
+|404   |          counter2          |countUD5L_209             |     9|
+|405   |        counter2            |countUD10L_187            |    38|
+|406   |          counter1          |countUD5L_206             |    17|
+|407   |          counter2          |countUD5L_207             |    21|
+|408   |        counter3            |countUD10L_188            |    27|
+|409   |          counter1          |countUD5L_204             |    18|
+|410   |          counter2          |countUD5L_205             |     9|
+|411   |        counter4            |countUD10L_189            |    29|
+|412   |          counter1          |countUD5L_202             |    15|
+|413   |          counter2          |countUD5L_203             |    14|
+|414   |        counter5            |countUD10L_190            |    27|
+|415   |          counter1          |countUD5L_200             |    18|
+|416   |          counter2          |countUD5L_201             |     9|
+|417   |        counter6            |countUD10L_191            |    41|
+|418   |          counter1          |countUD5L_198             |    27|
+|419   |          counter2          |countUD5L_199             |    14|
+|420   |        counter7            |countUD10L_192            |    23|
+|421   |          counter1          |countUD5L_196             |    14|
+|422   |          counter2          |countUD5L_197             |     9|
+|423   |        counter8            |countUD10L_193            |    29|
+|424   |          counter1          |countUD5L_194             |    15|
+|425   |          counter2          |countUD5L_195             |    14|
+|426   |      SecEdge               |EdgeDetector_182          |     1|
+|427   |      secGenerator          |countU10_183              |     2|
+|428   |        counter1            |countU5_184               |     2|
+|429   |    VertGap3                |VertGap3                  |   304|
+|430   |      EdgeDetector          |EdgeDetector_146          |     1|
+|431   |      GapStateMachine       |GapStateMachine_147       |    32|
+|432   |      GapVerticalComponent  |GapVerticalComponent_148  |   267|
+|433   |        counter0            |countUD10L_152            |    26|
+|434   |          counter1          |countUD5L_177             |    15|
+|435   |          counter2          |countUD5L_178             |    11|
+|436   |        counter1            |countUD10L_153            |    23|
+|437   |          counter1          |countUD5L_175             |    14|
+|438   |          counter2          |countUD5L_176             |     9|
+|439   |        counter2            |countUD10L_154            |    38|
+|440   |          counter1          |countUD5L_173             |    17|
+|441   |          counter2          |countUD5L_174             |    21|
+|442   |        counter3            |countUD10L_155            |    27|
+|443   |          counter1          |countUD5L_171             |    18|
+|444   |          counter2          |countUD5L_172             |     9|
+|445   |        counter4            |countUD10L_156            |    29|
+|446   |          counter1          |countUD5L_169             |    15|
+|447   |          counter2          |countUD5L_170             |    14|
+|448   |        counter5            |countUD10L_157            |    27|
+|449   |          counter1          |countUD5L_167             |    18|
+|450   |          counter2          |countUD5L_168             |     9|
+|451   |        counter6            |countUD10L_158            |    41|
+|452   |          counter1          |countUD5L_165             |    27|
+|453   |          counter2          |countUD5L_166             |    14|
+|454   |        counter7            |countUD10L_159            |    23|
+|455   |          counter1          |countUD5L_163             |    14|
+|456   |          counter2          |countUD5L_164             |     9|
+|457   |        counter8            |countUD10L_160            |    29|
+|458   |          counter1          |countUD5L_161             |    15|
+|459   |          counter2          |countUD5L_162             |    14|
+|460   |      SecEdge               |EdgeDetector_149          |     1|
+|461   |      secGenerator          |countU10_150              |     3|
+|462   |        counter1            |countU5_151               |     3|
+|463   |    VertGap4                |VertGap4                  |   300|
+|464   |      EdgeDetector          |EdgeDetector_113          |     1|
+|465   |      GapStateMachine       |GapStateMachine_114       |    28|
+|466   |      GapVerticalComponent  |GapVerticalComponent_115  |   267|
+|467   |        counter0            |countUD10L_119            |    26|
+|468   |          counter1          |countUD5L_144             |    15|
+|469   |          counter2          |countUD5L_145             |    11|
+|470   |        counter1            |countUD10L_120            |    23|
+|471   |          counter1          |countUD5L_142             |    14|
+|472   |          counter2          |countUD5L_143             |     9|
+|473   |        counter2            |countUD10L_121            |    38|
+|474   |          counter1          |countUD5L_140             |    17|
+|475   |          counter2          |countUD5L_141             |    21|
+|476   |        counter3            |countUD10L_122            |    27|
+|477   |          counter1          |countUD5L_138             |    18|
+|478   |          counter2          |countUD5L_139             |     9|
+|479   |        counter4            |countUD10L_123            |    29|
+|480   |          counter1          |countUD5L_136             |    15|
+|481   |          counter2          |countUD5L_137             |    14|
+|482   |        counter5            |countUD10L_124            |    27|
+|483   |          counter1          |countUD5L_134             |    18|
+|484   |          counter2          |countUD5L_135             |     9|
+|485   |        counter6            |countUD10L_125            |    41|
+|486   |          counter1          |countUD5L_132             |    27|
+|487   |          counter2          |countUD5L_133             |    14|
+|488   |        counter7            |countUD10L_126            |    23|
+|489   |          counter1          |countUD5L_130             |    14|
+|490   |          counter2          |countUD5L_131             |     9|
+|491   |        counter8            |countUD10L_127            |    29|
+|492   |          counter1          |countUD5L_128             |    15|
+|493   |          counter2          |countUD5L_129             |    14|
+|494   |      SecEdge               |EdgeDetector_116          |     1|
+|495   |      secGenerator          |countU10_117              |     3|
+|496   |        counter1            |countU5_118               |     3|
+|497   |    VertGap5                |VertGap5                  |   300|
+|498   |      EdgeDetector          |EdgeDetector_80           |     1|
+|499   |      GapStateMachine       |GapStateMachine_81        |    28|
+|500   |      GapVerticalComponent  |GapVerticalComponent_82   |   267|
+|501   |        counter0            |countUD10L_86             |    26|
+|502   |          counter1          |countUD5L_111             |    15|
+|503   |          counter2          |countUD5L_112             |    11|
+|504   |        counter1            |countUD10L_87             |    23|
+|505   |          counter1          |countUD5L_109             |    14|
+|506   |          counter2          |countUD5L_110             |     9|
+|507   |        counter2            |countUD10L_88             |    38|
+|508   |          counter1          |countUD5L_107             |    17|
+|509   |          counter2          |countUD5L_108             |    21|
+|510   |        counter3            |countUD10L_89             |    27|
+|511   |          counter1          |countUD5L_105             |    18|
+|512   |          counter2          |countUD5L_106             |     9|
+|513   |        counter4            |countUD10L_90             |    29|
+|514   |          counter1          |countUD5L_103             |    15|
+|515   |          counter2          |countUD5L_104             |    14|
+|516   |        counter5            |countUD10L_91             |    27|
+|517   |          counter1          |countUD5L_101             |    18|
+|518   |          counter2          |countUD5L_102             |     9|
+|519   |        counter6            |countUD10L_92             |    41|
+|520   |          counter1          |countUD5L_99              |    27|
+|521   |          counter2          |countUD5L_100             |    14|
+|522   |        counter7            |countUD10L_93             |    23|
+|523   |          counter1          |countUD5L_97              |    14|
+|524   |          counter2          |countUD5L_98              |     9|
+|525   |        counter8            |countUD10L_94             |    29|
+|526   |          counter1          |countUD5L_95              |    15|
+|527   |          counter2          |countUD5L_96              |    14|
+|528   |      SecEdge               |EdgeDetector_83           |     1|
+|529   |      secGenerator          |countU10_84               |     3|
+|530   |        counter1            |countU5_85                |     3|
+|531   |    VertGap6                |VertGap6                  |   299|
+|532   |      EdgeDetector          |EdgeDetector_47           |     1|
+|533   |      GapStateMachine       |GapStateMachine_48        |    28|
+|534   |      GapVerticalComponent  |GapVerticalComponent_49   |   267|
+|535   |        counter0            |countUD10L_53             |    26|
+|536   |          counter1          |countUD5L_78              |    15|
+|537   |          counter2          |countUD5L_79              |    11|
+|538   |        counter1            |countUD10L_54             |    23|
+|539   |          counter1          |countUD5L_76              |    14|
+|540   |          counter2          |countUD5L_77              |     9|
+|541   |        counter2            |countUD10L_55             |    38|
+|542   |          counter1          |countUD5L_74              |    17|
+|543   |          counter2          |countUD5L_75              |    21|
+|544   |        counter3            |countUD10L_56             |    27|
+|545   |          counter1          |countUD5L_72              |    18|
+|546   |          counter2          |countUD5L_73              |     9|
+|547   |        counter4            |countUD10L_57             |    29|
+|548   |          counter1          |countUD5L_70              |    15|
+|549   |          counter2          |countUD5L_71              |    14|
+|550   |        counter5            |countUD10L_58             |    27|
+|551   |          counter1          |countUD5L_68              |    18|
+|552   |          counter2          |countUD5L_69              |     9|
+|553   |        counter6            |countUD10L_59             |    41|
+|554   |          counter1          |countUD5L_66              |    27|
+|555   |          counter2          |countUD5L_67              |    14|
+|556   |        counter7            |countUD10L_60             |    23|
+|557   |          counter1          |countUD5L_64              |    14|
+|558   |          counter2          |countUD5L_65              |     9|
+|559   |        counter8            |countUD10L_61             |    29|
+|560   |          counter1          |countUD5L_62              |    15|
+|561   |          counter2          |countUD5L_63              |    14|
+|562   |      SecEdge               |EdgeDetector_50           |     1|
+|563   |      secGenerator          |countU10_51               |     2|
+|564   |        counter1            |countU5_52                |     2|
+|565   |    VertGap7                |VertGap7                  |   300|
+|566   |      EdgeDetector          |EdgeDetector_18           |     1|
+|567   |      GapStateMachine       |GapStateMachine           |    28|
+|568   |      GapVerticalComponent  |GapVerticalComponent      |   267|
+|569   |        counter0            |countUD10L                |    26|
+|570   |          counter1          |countUD5L_45              |    15|
+|571   |          counter2          |countUD5L_46              |    11|
+|572   |        counter1            |countUD10L_22             |    23|
+|573   |          counter1          |countUD5L_43              |    14|
+|574   |          counter2          |countUD5L_44              |     9|
+|575   |        counter2            |countUD10L_23             |    38|
+|576   |          counter1          |countUD5L_41              |    17|
+|577   |          counter2          |countUD5L_42              |    21|
+|578   |        counter3            |countUD10L_24             |    27|
+|579   |          counter1          |countUD5L_39              |    18|
+|580   |          counter2          |countUD5L_40              |     9|
+|581   |        counter4            |countUD10L_25             |    29|
+|582   |          counter1          |countUD5L_37              |    15|
+|583   |          counter2          |countUD5L_38              |    14|
+|584   |        counter5            |countUD10L_26             |    27|
+|585   |          counter1          |countUD5L_35              |    18|
+|586   |          counter2          |countUD5L_36              |     9|
+|587   |        counter6            |countUD10L_27             |    41|
+|588   |          counter1          |countUD5L_33              |    27|
+|589   |          counter2          |countUD5L_34              |    14|
+|590   |        counter7            |countUD10L_28             |    23|
+|591   |          counter1          |countUD5L_31              |    14|
+|592   |          counter2          |countUD5L_32              |     9|
+|593   |        counter8            |countUD10L_29             |    29|
+|594   |          counter1          |countUD5L                 |    15|
+|595   |          counter2          |countUD5L_30              |    14|
+|596   |      SecEdge               |EdgeDetector_19           |     1|
+|597   |      secGenerator          |countU10_20               |     3|
+|598   |        counter1            |countU5_21                |     3|
+|599   |  not_so_slow               |lab7_clks                 |    55|
+|600   |    my_clk_inst             |clk_wiz_0                 |     4|
+|601   |    slowclk                 |clkcntrl4                 |    50|
+|602   |      XLXI_38               |CB4CE_MXILINX_clkcntrl4   |    12|
+|603   |        I_Q0                |FTCE_MXILINX_clkcntrl4_14 |     2|
+|604   |        I_Q1                |FTCE_MXILINX_clkcntrl4_15 |     2|
+|605   |        I_Q2                |FTCE_MXILINX_clkcntrl4_16 |     2|
+|606   |        I_Q3                |FTCE_MXILINX_clkcntrl4_17 |     2|
+|607   |      XLXI_39               |CB4CE_MXILINX_clkcntrl4_0 |    12|
+|608   |        I_Q0                |FTCE_MXILINX_clkcntrl4_10 |     2|
+|609   |        I_Q1                |FTCE_MXILINX_clkcntrl4_11 |     2|
+|610   |        I_Q2                |FTCE_MXILINX_clkcntrl4_12 |     2|
+|611   |        I_Q3                |FTCE_MXILINX_clkcntrl4_13 |     2|
+|612   |      XLXI_40               |CB4CE_MXILINX_clkcntrl4_1 |    12|
+|613   |        I_Q0                |FTCE_MXILINX_clkcntrl4_6  |     2|
+|614   |        I_Q1                |FTCE_MXILINX_clkcntrl4_7  |     2|
+|615   |        I_Q2                |FTCE_MXILINX_clkcntrl4_8  |     2|
+|616   |        I_Q3                |FTCE_MXILINX_clkcntrl4_9  |     2|
+|617   |      XLXI_45               |CB4CE_MXILINX_clkcntrl4_2 |    12|
+|618   |        I_Q0                |FTCE_MXILINX_clkcntrl4    |     2|
+|619   |        I_Q1                |FTCE_MXILINX_clkcntrl4_3  |     2|
+|620   |        I_Q2                |FTCE_MXILINX_clkcntrl4_4  |     2|
+|621   |        I_Q3                |FTCE_MXILINX_clkcntrl4_5  |     2|
+|622   |  qsecTicker                |qsecTicker                |    26|
+|623   |  secGenerator              |countU10                  |     2|
+|624   |    counter1                |countU5                   |     2|
++------+----------------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:00 ; elapsed = 00:02:06 . Memory (MB): peak = 905.441 ; gain = 692.738
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 590 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:38 ; elapsed = 00:01:49 . Memory (MB): peak = 905.441 ; gain = 348.938
+Synthesis Optimization Complete : Time (s): cpu = 00:02:00 ; elapsed = 00:02:06 . Memory (MB): peak = 905.441 ; gain = 692.738
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 101 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 4 instances
+  AND4 => LUT4: 4 instances
+  BUF => LUT1: 1 instances
+  XOR2 => LUT2: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+347 Infos, 373 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:03 ; elapsed = 00:02:07 . Memory (MB): peak = 905.441 ; gain = 673.461
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bhayame/Desktop/Lab 7/Lab 7.runs/synth_1/TopLevel.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.203 . Memory (MB): peak = 905.441 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 01 21:02:14 2018...
